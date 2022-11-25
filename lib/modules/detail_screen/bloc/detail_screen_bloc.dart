@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../../../utils/helpers/global.dart';
 import '../../../modules/detail_screen/view_model/detail_screen_view_model.dart';
 import '../../../utils/helpers/app_state.dart';
 import '../../../bloc/bloc.dart';
@@ -32,6 +33,7 @@ class DetailScreenBloc extends Bloc<DetailScreenModel> {
         statusMessage: data.reasonPhrase.toString(),
         data: jsonDecode(data.body),
       );
+      printDebug(jsonDecode(data.body));
       state.appState = AppState.failure;
     }
     emit(state);

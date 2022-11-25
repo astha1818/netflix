@@ -369,7 +369,7 @@ class _HomeBannerState extends State<HomeBanner> {
             width: AppDimen.size10,
           ),
         CustomText(
-          title: widget.homeScreenBloc.state.responseModel?.data['runtime'] > 30
+          title: widget.homeScreenBloc.state.responseModel?.data['runtime'] > 60
               ? CommonFunctions().durationToString(
                   widget.homeScreenBloc.state.responseModel?.data['runtime'])
               : '${widget.homeScreenBloc.state.responseModel?.data['runtime']} mins',

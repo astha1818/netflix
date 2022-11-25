@@ -18,5 +18,5 @@ class AppStrings {
   static const String noTitleFound = 'No title found';
   static const String noDescriptionFound = 'No description found';
   static const String imagePath =
-      'https://image.tmdb.org/t/p/w220_and_h330_face';
+      'https://image.tmdb.org/t/p/w500/chV0avy5ogIB2PMTInT4KpHDzwj.jpg';
 }
